@@ -95,8 +95,8 @@ jobs:
     - name: Install Feeds(安装feeds)
       run: |
         cd $OPENWRT_PATH
-        git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-        git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+        #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+        #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
         git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
         ./scripts/feeds update -a
         ./scripts/feeds install -a
